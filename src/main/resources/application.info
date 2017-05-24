@@ -1,0 +1,15 @@
+application.type=widget
+application.code=easyboxxspring
+application.title=Easy Boxx Spring
+application.description=Easy Boxx Spring
+application.category=SYSTEM
+application.renderer=freemarker
+developer.code=DESKTOP-IB3FDAE
+developer.name=claud
+developer.url=http://www.fluig.com
+application.uiwidget=true
+application.mobileapp=true
+view.file=view.ftl
+edit.file=edit.ftl
+locale.file.base.name=easyboxxspring
+application.tenant.code=IV2

@@ -1,0 +1,266 @@
+<style>
+.btn-group .btn.active {
+	background-color: #5cb85c !important;
+	border-color: #4cae4c !important;
+	color: #fff !important;
+}
+
+.btn-group .btn:nth-child(2).active {
+	background-color: #d9534f !important;
+	border-color: #d43f3a !important;
+}
+
+@media ( max-width : 767px) {
+	.btn-group .btn {
+		width: 50% !important;
+	}
+	.btn-group {
+		width: 100% !important;
+	}
+}
+
+.k-select, .k-textbox, .k-datepicker {
+	width: 100%;
+	display: block;
+	border-color: #ddd !important;
+	border-width: 1px;
+}
+
+textarea.k-textbox {
+	padding: 1rem 1.5rem;
+}
+
+.k-select[readonly], .k-textbox[readonly], .k-select[disabled],
+	.k-textbox[disabled] {
+	background-color: rgba(243, 243, 243, .85) !important;
+	box-shadow: none;
+}
+
+.icon-right input {
+	padding-right: 40px;
+}
+
+.icon-right span {
+	float: right;
+	margin-top: -38px;
+	padding: 0 13px;
+	line-height: 37px;
+	cursor: pointer;
+	border-left: 1px solid #ddd;
+}
+
+.fieldlist {
+	margin: 0 0 -1em;
+	padding: 0;
+}
+
+.fieldlist li {
+	list-style: none;
+	padding-bottom: 2em;
+}
+</style>
+
+
+<div class="container-fluid">
+
+	<br>
+
+	<!-- Nav tabs -->
+	<ul class="nav nav-tabs" role="tablist" id="myTabs">
+		<li role="presentation" class="active"><a href="#relato"
+			aria-controls="Relato" role="tab" data-toggle="tab">Relato</a></li>
+		<li role="presentation"><a href="#analise"
+			aria-controls="analise" role="tab" data-toggle="tab">Análise de
+				Relatos e não Conformidades</a></li>
+	</ul>
+
+	<br>
+
+	<!-- Tab panes -->
+	<div class="tab-content">
+		<div role="tabpanel" class="tab-pane active" id="relato">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="form-group">
+						<label>Código</label> <input type="text" class="k-textbox input-sm"
+							readonly>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="form-group">
+						<label>Data Relato</label> <input type="text" class="k-textbox input-sm"
+							readonly>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="form-group icon-right">
+						<label>Setor Relator</label> <input type="text" class="k-textbox input-sm">
+						<span class="glyphicon icon-sm  glyphicon-search"></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Responsável</label> <input type="text" class="k-textbox input-sm">
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="form-group">
+						<label>Data Ocorrência</label> <input type="text"
+							class="k-datepicker">
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<label>Setor Responsável Origem</label>
+					<div class="form-group icon-right">
+						<input type="text" class="k-textbox input-sm"> <span
+							class="glyphicon icon-sm  glyphicon-search"></span>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<label>Ação para Controle</label>
+					<div class="form-group icon-right">
+						<input type="text" class="k-textbox input-sm"> <span
+							class="glyphicon icon-sm  glyphicon-search"></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<label>Método Detecção</label>
+					<div class="form-group icon-right">
+						<input type="text" class="k-textbox input-sm"> <span
+							class="glyphicon icon-sm  glyphicon-search"></span>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Não Conformidade</label>
+						<div class="form-group icon-right">
+							<input type="text" class="k-textbox input-sm"> <span
+								class="glyphicon icon-sm  glyphicon-search"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Impacto da não conformidade</label>
+						<select type="text" class="k-select input-sm">
+							<option></option>
+						</select>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>&nbsp;</label>
+						<ul class="fieldlist">
+							<li><input type="checkbox" id="eq1" class="k-checkbox"
+								checked="checked"> <label class="k-checkbox-label"
+								for="eq1">Uso inadvertido do Produto não Conforme</label></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Impacto da não conformidade</label>
+						<textarea type="text" class="k-textbox" rows="8"></textarea>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Uso inadvertido do Produto não Conforme</label><br>
+						<textarea type="text" class="k-textbox" rows="8"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div role="tabpanel" class="tab-pane" id="analise">
+			<div class="row">
+				<div class="col-xs-12 form-group">
+					<div class="btn-group" data-toggle="buttons">
+						<label class="btn btn-default"> <input type="radio"
+							name="aprovar" id="aprovado" value="1"> Aprovado
+						</label> <label class="btn btn-default"> <input type="radio"
+							name="aprovar" id="reprovado" value="2"> Reprovado
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-8">
+					<label>Causa Raíz</label>
+					<div class="form-group icon-right">
+						<input class="k-textbox input-sm"> <span
+							class="glyphicon icon-sm  glyphicon-search"></span>
+					</div>
+				</div>
+
+				<div class="col-xs-4">
+					<div class="form-group">
+						<label>Data</label> <input class="k-datepicker" id="" name="">
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-4">
+					<div class="form-group">
+						<label>Responsável</label> <input class="k-textbox input-sm" id="" name=""
+							readonly>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>&nbsp;</label>
+						<ul class="fieldlist">
+							<li><input type="checkbox" id="eq2" class="k-checkbox"
+								checked="checked"> <label class="k-checkbox-label"
+								for="eq2">Ações e Projetos</label></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<label>Análise Justificativa</label><br>
+						<textarea rows="8" class="k-textbox" id="" name=""></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+	<div class="row form-group">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right">
+			<hr />
+			<button type="button" class="btn btn-sm btn-primary">Gravar</button>
+		</div>
+	</div>
+	
+
+</div>

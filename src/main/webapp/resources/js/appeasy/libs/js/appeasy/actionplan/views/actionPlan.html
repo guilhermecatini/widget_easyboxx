@@ -1,0 +1,407 @@
+<style>
+.k-select, .k-textbox, .k-datepicker {
+	width: 100%;
+	display: block;
+	border-color: #CCC;
+	border-width: 1px;
+}
+
+.k-select:hover, .k-textbox:hover {
+	border-color: #BBB;
+	border-width: 1px;
+}
+
+.k-select[readonly], .k-textbox[readonly], .k-select[disabled],
+	.k-textbox[disabled] {
+	background-color: rgba(243, 243, 243, .85) !important;
+	box-shadow: none;
+}
+</style>
+
+
+
+<div class="container-fluid">
+	<!-- Abas de Navegação -->
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<ul class="nav nav-tabs" role="tablist" id="myTabs">
+				<li role="presentation" class="active"><a
+					href="#acoes-e-projetos" aria-controls="acoes-e-projetos"
+					role="tab" data-toggle="tab">Ações e Projetos</a></li>
+				<li role="presentation"><a href="#ocorrencias"
+					aria-controls="ocorrencias" role="tab" data-toggle="tab">Ocorrências</a>
+				</li>
+				<li role="presentation"><a href="#acoes" aria-controls="acoes"
+					role="tab" data-toggle="tab">Ações (5W2H)</a></li>
+				<li role="presentation"><a href="#analise-de-resultados"
+					aria-controls="analise-de-resultados" role="tab" data-toggle="tab">Análise
+						de Resultados</a></li>
+				<li role="presentation"><a href="#setores-envolvidos"
+					aria-controls="setores-envolvidos" role="tab" data-toggle="tab">Setores
+						Envolvidos</a></li>
+				<li role="presentation"><a href="#anexo" aria-controls="anexo"
+					role="tab" data-toggle="tab">Anexo</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Tabs -->
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="tab-content">
+				<!-- Ações e Projetos -->
+				<div role="tabpanel" class="tab-pane fade in active"
+					id="acoes-e-projetos">
+
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h3>Ações e Projetos</h3>
+							<hr />
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+							<label for="">Ações e Projetos com Projeto</label> <select
+								class="k-select input-sm">
+								<option value="">-- Selecione --</option>
+								<option value="1">Opção 1</option>
+								<option value="2">Opção 2</option>
+								<option value="3">Opção 3</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+							<label>Código</label> <input type="text" class="k-textbox input-sm"
+								disabled="">
+						</div>
+						<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+							<label>Nome</label> <input type="text" class="k-textbox input-sm">
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+							<label>Data de Elaboração</label> <input type="text"
+								class="k-datepicker">
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+							<label>Tipo de Ação</label> <select class="k-select input-sm">
+								<option value="">-- Selecione --</option>
+								<option value="PREVENTIVO">Preventivo</option>
+								<option value="CORRETIVO">Corretivo</option>
+							</select>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+							<label>Responsável</label> <input type="text" class="k-textbox input-sm">
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<label>Descrição do Problema</label>
+							<textarea rows="8" class="k-textbox"></textarea>
+						</div>
+					</div>
+
+				</div>
+				<!-- Fim Ações e Projetos -->
+
+				<!-- Ocorrências -->
+				<div role="tabpanel" class="tab-pane fade" id="ocorrencias">
+
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h3>Ocorrências</h3>
+							<hr />
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<label>Descrição</label>
+							<textarea rows="8" class="k-textbox"></textarea>
+						</div>
+					</div>
+
+				</div>
+				<!-- Fim Ocorrências -->
+
+				<!-- Ações -->
+				<div role="tabpanel" class="tab-pane fade" id="acoes">
+
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h3>Ações (5W2H)</h3>
+							<hr />
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<label>O quê</label>
+							<textarea rows="3" class="k-textbox"></textarea>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<label>Por quê</label>
+							<textarea rows="3" class="k-textbox"></textarea>
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<label>Como</label>
+							<textarea rows="3" class="k-textbox"></textarea>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<label>Risco</label>
+							<textarea rows="3" class="k-textbox"></textarea>
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<label>Onde</label> <input type="text" class="k-textbox input-sm">
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<label>Quem</label> <input type="text" class="k-textbox input-sm">
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<label>Setor</label> <select class="k-select input-sm">
+								<option value="">-- Selecione --</option>
+								<option value="01">Setor 01</option>
+								<option value="02">Setor 02</option>
+							</select>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<label>Quem</label>
+							<textarea rows="3" class="k-textbox"></textarea>
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<hr />
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+							<label>Status</label> <select class="k-select input-sm">
+								<option value="">-- Selecione --</option>
+								<option value="PLANEJADO">Planejado</option>
+								<option value="NAOPLANEJADO">Não Planejado</option>
+							</select>
+						</div>
+						<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+							<label>Percentual</label> <input type="text" class="k-textbox input-sm">
+						</div>
+						<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+							<label>Custo</label> <input type="text" class="k-textbox input-sm">
+						</div>
+						<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+							<label>Ordem de Exibição</label> <input type="text"
+								class="k-textbox input-sm">
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<hr />
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+							<label>Data da Evidência</label> <input class="k-datepicker"
+								type="text">
+						</div>
+						<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+							<label>Evidência</label> <input type="checkbox" class="checkbox">
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+							<label>Análise</label>
+							<textarea rows="3" class="k-textbox"></textarea>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+							<label>Descrição da Evidência</label>
+							<textarea rows="3" class="k-textbox"></textarea>
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+							<label>Local de Armazenamento da Evidência</label>
+							<textarea rows="3" class="k-textbox"></textarea>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+							<hr>
+							<button class="btn btn-primary btn-sm" type="button">Anexar
+								Arquivo</button>
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h3>Período da Ação</h3>
+							<p>
+								1.1.
+								<button class="btn btn-primary btn-sm" type="button">+</button>
+							</p>
+							<hr />
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+							<label>Código</label> <input type="text" class="k-textbox input-sm"
+								readonly="" disabled="">
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+							<label>Data Inicial</label> <input type="text"
+								class="k-datepicker">
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+							<label>Data Final</label> <input type="text" class="k-datepicker">
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<label>Justificativa</label>
+							<textarea rows="3" class="k-textbox"></textarea>
+						</div>
+					</div>
+
+
+
+				</div>
+				<!-- Fim Ações -->
+
+				<!-- Análise de Resultados -->
+				<div role="tabpanel" class="tab-pane fade"
+					id="analise-de-resultados">
+
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h3>Análise de Resultados</h3>
+							<hr />
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+							<label>Código</label> <input type="text" class="k-textbox input-sm"
+								disabled="">
+						</div>
+						<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+							<label>Data Prevista</label> <input type="text"
+								class="k-datepicker">
+						</div>
+						<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+							<label>Data de Análise</label> <input type="text"
+								class="k-datepicker">
+						</div>
+						<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+							<label>Encerrar Ações e Projetos</label> <input type="checkbox"
+								class="checkbox">
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<label>Análise</label>
+							<textarea rows="5" class="k-textbox"></textarea>
+						</div>
+					</div>
+
+				</div>
+				<!-- Fim Análise de Resultados -->
+
+				<!-- Setores Envolvidos -->
+				<div role="tabpanel" class="tab-pane fade" id="setores-envolvidos">
+
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h3>Setores Envolvidos</h3>
+							<hr />
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<input type="checkbox"> <span>Consulta liberada
+								para todos os setores</span>
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+							<label>Setor</label> <select class="k-select input-sm">
+								<option value="">-- Selecione --</option>
+								<option value="01">Setor 01</option>
+								<option value="02">Setor 02</option>
+							</select>
+						</div>
+					</div>
+
+				</div>
+				<!-- Fim Setroes Envolvidos -->
+
+				<!-- Anexo -->
+				<div role="tabpanel" class="tab-pane fade" id="anexo">
+
+					<div class="row form-group">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h3>Anexo</h3>
+							<hr />
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+							<label>Código</label> <input type="text" class="k-textbox input-sm"
+								disabled="">
+						</div>
+						<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+							<label>Data</label> <input type="text" class="k-datepicker">
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<label>Observação</label>
+							<textarea rows="5" class="k-textbox"></textarea>
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<input type="file">
+						</div>
+					</div>
+
+				</div>
+				<!-- Fim Anexo -->
+
+			</div>
+		</div>
+	</div>
+	<!-- Tabs End -->
+	
+	<div class="row form-group">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right">
+			<hr />
+			<button type="button" class="btn btn-sm btn-primary">Gravar</button>
+		</div>
+	</div>
+
+</div>
